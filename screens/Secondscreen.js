@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
-
+import logo from '../assets/logo.png';
 
 function Secondscreen({navigation}) {
     return (
@@ -13,27 +13,38 @@ function Secondscreen({navigation}) {
         
         
         
-        <Text style={{fontSize:25, color:"#999999", marginTop:20}}> Welcome to </Text>
+        <Text style={{fontSize:25, color:"#999999", marginTop:30}}> Welcome to </Text>
         
-        <Text style={styles.mainStylenew}> Collins Shoe App </Text>
+        <Text style={styles.mainStylenew}> itFits</Text>
 
         <TouchableOpacity style={styles.roundShape}>
         <TouchableOpacity style={styles.roundShape1}>
-        <TouchableOpacity style={styles.roundShape2}></TouchableOpacity>
+        <TouchableOpacity style={styles.roundShape2}>
+        <Image source={logo} style={{ height:200, width:200, borderRadius:100}} />
+        </TouchableOpacity>
         </TouchableOpacity>
         </TouchableOpacity>
   
-            <TouchableOpacity style={styles.button} >
-            <Text   onPress={() => navigation.push('Cartlist')}
-            style={{color:"white", fontSize:20, fontWeight: 'bold', }}>                  Sign in with Google</Text> 
+
+            <Text style={{fontSize:30, fontWeight: 'bold'}}> Discover your</Text>
+            <Text style={{fontSize:30, fontWeight:'bold',paddingBottom:20}}> Dream Shoe Here</Text>
+            <Text style={{fontSize:15,color:'#737373' }}>Explore all the most exciting shoes </Text>
+            <Text style={{fontSize:15,paddingBottom:50, color:'#737373' }}>based on your interests and favourite brands </Text>
+            
+          <View style={styles.buttonsMain}>
+            <TouchableOpacity onPress={() => navigation.push('Cartlist')} style={styles.button} >
+            <Text   
+            style={{color:"black", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Login</Text> 
             </TouchableOpacity>
-  
-            <TouchableOpacity style={styles.button1} >
-            <Text   onPress={() => navigation.push('Cartlist')}
-            style={{color:"white", fontSize:20, fontWeight: 'bold', }}>                   Sign in with Apple</Text> 
+      
+          
+            <TouchableOpacity  onPress={() => navigation.push('Cartlist')} style={styles.button1} >
+            <Text  
+            style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Signup</Text> 
             </TouchableOpacity>
+          </View>
             <Text style={{fontSize:15, color:"#999999", marginTop:9}}> Not a member? 
-            <Text onPress={() => navigation.push('HomeScreen')} style={{fontWeight:'bold', color:'#ff8000'}}>Sign up</Text>
+            <Text onPress={() => navigation.push('HomeScreen')} style={{fontWeight:'bold', color:'#00ace6'}}>Sign up</Text>
             </Text>
   
         
@@ -58,17 +69,18 @@ function Secondscreen({navigation}) {
     },
     roundShape:{
       alignSelf:'center',
-      marginBottom:30,
+      marginBottom:50,
       borderRadius:150,
-      backgroundColor:'#f2f2f2',
+      backgroundColor:'#4dd2ff',
       width:300,
       height:300,
+      
     },
 
     roundShape1:{
       alignSelf:'center',
       borderRadius:150,
-      backgroundColor:'#e6e6e6',
+      backgroundColor:'#99e6ff',
       width:250,
       height:250,
       marginTop:25,
@@ -87,7 +99,7 @@ function Secondscreen({navigation}) {
     mainStylenew:{
       height: 50,
       width: "80%",
-      marginBottom:"1%" , 
+      marginBottom:"10%" , 
       textAlign:"center",
       fontSize: 30, 
       fontWeight: 'bold', color:"#262626",
@@ -98,24 +110,28 @@ function Secondscreen({navigation}) {
         height:60, 
         justifyContent:'center',
         borderRadius:15, 
-        backgroundColor:"#e65c00", 
+        backgroundColor:"#f2f2f2", 
         alignSelf:"center", 
         textAlign: "center" ,
-        width:"80%",
+        width:"40%",
         marginTop:5,
+        marginRight:15,
         
+      },
+      buttonsMain:{
+        flexDirection:'row',
+        alignItems:'center',
       },
 
       button1:{
   
-        height:60,
+        height:58,
         justifyContent:'center',
         borderRadius:15, 
-        backgroundColor:"#1a1a1a", 
+        backgroundColor:"#00ace6", 
         alignSelf:"center", 
         textAlign: "center" ,
-        width:"80%",
-        marginTop:15,
+        width:"40%",
         
       },
   });

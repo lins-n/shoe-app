@@ -1,8 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Icon } from 'react-native-elements'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import air from '../assets/air.png';
@@ -10,7 +8,8 @@ import air2 from '../assets/air2.png';
 import air3 from '../assets/air3.png';
 import air4 from '../assets/air4.png';
 import air5 from '../assets/air5.png';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import air6 from '../assets/air6.jpg';
+
 
 function Categories({navigation}) {
   
@@ -19,7 +18,7 @@ function Categories({navigation}) {
   
 
   <ScrollView style={styles.scrollContainer}>
-    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:20, backgroundColor:'white',paddingTop:20}}>
+    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:20, backgroundColor:'#f2f6f7',paddingTop:20}}>
     
     
     
@@ -41,27 +40,27 @@ function Categories({navigation}) {
       <View style={styles.categories}>
       <TouchableOpacity style={styles.buttonCat} >
           <Text 
-          style={{color:"#ff8000", fontSize:20,fontWeight: 'bold',  }}>    All    </Text> 
+          style={{color:"#00ace6", fontSize:20,fontWeight: 'bold',  }}>    All    </Text> 
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.buttonCat} >
           <Text 
-          style={{color:"#b3b3b3", fontSize:20, }}>    Nike    </Text> 
+          style={{color:"#666666", fontSize:20, }}>    Nike    </Text> 
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.buttonCat} >
           <Text 
-          style={{color:"#b3b3b3", fontSize:20,}}>    Adidas    </Text> 
+          style={{color:"#666666", fontSize:20,}}>    Adidas    </Text> 
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.buttonCat} >
           <Text 
-          style={{color:"#b3b3b3", fontSize:20, }}>    Puma    </Text> 
+          style={{color:"#666666", fontSize:20, }}>    Puma    </Text> 
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.buttonCat} >
           <Text 
-          style={{color:"#b3b3b3", fontSize:20, }}>    Churchshoe    </Text> 
+          style={{color:"#666666", fontSize:20, }}>    Churchshoe    </Text> 
           </TouchableOpacity>
       </View>
       </ScrollView>
@@ -98,8 +97,8 @@ function Categories({navigation}) {
        <Text style={styles.textStyle2}>$1700.00</Text>
        </TouchableOpacity>
 
-       <TouchableOpacity style={styles.imgCont2}>
-       <Image source={air} style={styles.imgStylenew} /> 
+       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
+       <Image source={air} style={styles.imgStylenew}  /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>$1700.00</Text>
        </TouchableOpacity>
@@ -128,7 +127,7 @@ function Categories({navigation}) {
        <ScrollView>
       <View style={styles.categories2}>
       <TouchableOpacity style={styles.imgCont2}>
-       <Image source={air5} style={styles.imgStylenew} /> 
+       <Image source={air6} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>$1700.00</Text>
        </TouchableOpacity>
@@ -195,7 +194,7 @@ const styles=StyleSheet.create({
     fontSize:19,
     fontWeight:'bold',
     textAlign:'center',
-    color:"#ff8000",
+    color:"#00ace6",
   },
 
 
@@ -204,7 +203,7 @@ const styles=StyleSheet.create({
       height:40,
       justifyContent:'center',
       borderRadius:15, 
-      backgroundColor:"#f2f2f2",  
+      backgroundColor:"white",  
       textAlign: "left" ,
       marginBottom:20,
       marginRight:10,
@@ -237,7 +236,7 @@ const styles=StyleSheet.create({
       height: 200, 
       borderRadius:25, 
       
-      marginLeft: 18,
+      marginLeft: 15,
   
     
     },
@@ -251,7 +250,7 @@ const styles=StyleSheet.create({
       height: 250, 
       borderRadius:25, 
       marginRight:15, 
-      backgroundColor:"#f2f2f2",
+      backgroundColor:"white",
   
     
     },
@@ -261,7 +260,7 @@ const styles=StyleSheet.create({
       height: 250, 
       borderRadius:25, 
       marginRight:15, 
-      backgroundColor:"#f2f2f2",
+      backgroundColor:"white",
   
     
     },

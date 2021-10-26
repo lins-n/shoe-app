@@ -8,6 +8,7 @@ import Tabs from './component/Tabs.js';
 import Secondscreen from './screens/Secondscreen';
 import Categories from './screens/Categories';
 import Cartlist from './screens/Cartlist';
+import Shoedetail from './screens/Shoedetail';
 
 
 
@@ -23,6 +24,7 @@ export default function App() {
         <Stack.Screen name="Secondscreen" component={Secondscreen} options={{headerShown: false}}/>
         <Stack.Screen name ="Categories"  component ={Categories} options={{headerShown: false}} />
         <Stack.Screen name ="Cartlist"  component ={Tabs} options={{headerShown: false}} />
+        <Stack.Screen name ="Shoedetail"  component ={Shoedetail} options={{headerShown: false}} />
       </Stack.Navigator>
 
       
@@ -42,15 +44,6 @@ const styles = StyleSheet.create({
    
   },
   
-
-  mainStyle:{
-    height: 50, 
-    width: "80%",
-    
-    textAlign:"left",
-    fontSize: 20, 
-    color:"#8c8c8c",
-    },
 
   
 });
