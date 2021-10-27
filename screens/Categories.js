@@ -26,8 +26,7 @@ function Categories({navigation}) {
     
     <Icon name='bars' type='font-awesome' color='black' size='20'  style={{alignContent:'center',alignItems:'center',paddingTop:34 }}/>
          <TouchableOpacity style={styles.buttonCatnew} >
-          <Text 
-          style={{color:"#d9d9d9", fontSize:15, }}>    Search    </Text> 
+          <TextInput style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Search</TextInput> 
           </TouchableOpacity>
     <Icon name='search' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 10}}/>
     <Icon name='bell' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 15}}/>
@@ -81,14 +80,14 @@ function Categories({navigation}) {
         </ImageBackground> 
         </View>
         <Text style={styles.textStyle1}>Nike Hourache</Text>
-        <Text style={styles.textStyle2}>$1700.00</Text>
+        <Text style={styles.textStyle2}>¢600.00</Text>
        </TouchableOpacity>
 
        <TouchableOpacity 
        style={styles.imgCont1} onPress={() => navigation.push('Secondscreen')} >
        <Image source={air3} style={styles.imgStyle} />
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-       <Text style={styles.textStyle2}>$1700.00</Text> 
+       <Text style={styles.textStyle2}>¢1000.00</Text> 
        </TouchableOpacity>
        </View>
        
@@ -97,13 +96,13 @@ function Categories({navigation}) {
       <TouchableOpacity style={styles.imgCont2}>
        <Image source={air5} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-       <Text style={styles.textStyle2}>$1700.00</Text>
+       <Text style={styles.textStyle2}>¢700.00</Text>
        </TouchableOpacity>
 
        <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air} style={styles.imgStylenew}  /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-       <Text style={styles.textStyle2}>$1700.00</Text>
+       <Text style={styles.textStyle2}>¢700.00</Text>
        </TouchableOpacity>
 
 
@@ -116,13 +115,13 @@ function Categories({navigation}) {
        <TouchableOpacity style={styles.imgCont1}>
        <Image source={air4} style={styles.imgStyle} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-      <Text style={styles.textStyle2}>$1700.00</Text>
+      <Text style={styles.textStyle2}>¢900.00</Text>
        </TouchableOpacity>
 
        <TouchableOpacity style={styles.imgCont1}>
        <Image source={air2} style={styles.imgStyle} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-      <Text style={styles.textStyle2}>$1700.00</Text>
+      <Text style={styles.textStyle2}>¢1700.00</Text>
        </TouchableOpacity>
        </View>
 
@@ -132,13 +131,13 @@ function Categories({navigation}) {
       <TouchableOpacity style={styles.imgCont2}>
        <Image source={air6} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-       <Text style={styles.textStyle2}>$1700.00</Text>
+       <Text style={styles.textStyle2}>¢500.00</Text>
        </TouchableOpacity>
 
        <TouchableOpacity style={styles.imgCont2}>
        <Image source={air} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
-       <Text style={styles.textStyle2}>$1700.00</Text>
+       <Text style={styles.textStyle2}>¢500.00</Text>
        </TouchableOpacity>
 
 
