@@ -25,8 +25,11 @@ function Categories({navigation}) {
     <View style={styles.categories}>
     
     <Icon name='bars' type='font-awesome' color='black' size='20'  style={{alignContent:'center',alignItems:'center',paddingTop:34 }}/>
-
-    <Icon name='search' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 300}}/>
+         <TouchableOpacity style={styles.buttonCatnew} >
+          <Text 
+          style={{color:"#d9d9d9", fontSize:15, }}>    Search    </Text> 
+          </TouchableOpacity>
+    <Icon name='search' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 10}}/>
     <Icon name='bell' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 15}}/>
     </View> 
 
@@ -209,6 +212,21 @@ const styles=StyleSheet.create({
       marginRight:10,
       
     },
+
+    buttonCatnew:{
+      width:250,
+      height:40,
+      justifyContent:'center',
+      borderRadius:15, 
+      backgroundColor:"#fafafa",
+      textAlign: "center" ,
+      marginRight:10,
+      marginLeft:45,
+      marginTop:27,
+      
+    },
+
+
     imageLarge:{
   
       height:200,

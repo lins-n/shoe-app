@@ -25,9 +25,9 @@ function Cartlist({navigation}) {
     <Image source={air2} style={styles.imgStyle} />
     </TouchableOpacity>
     <View style={styles.container1}>
-    <Text style={{paddingTop:0, paddingLeft:15, paddingBottom:7, fontSize:18}}>Nike Houraches  <Icon name='trash-2' type='feather' color='orange' size='17' style={{paddingLeft: 100, paddingTop:17}}/></Text>
+    <Text style={{paddingTop:0, paddingLeft:15, paddingBottom:7, fontSize:18}}>Nike Houraches  <Icon name='trash-2' type='feather' color='#00ace6' size='17' style={{paddingLeft: 100, paddingTop:17}}/></Text>
     <Text style={{ paddingLeft:15, paddingBottom:8, color:'grey'}}>Mountain Bike </Text>
-    <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'orange'}}>¢</Text> 1,200.00   <Icon name='minus' type='feather' color='black' size='17' style={{paddingLeft: 80}}/> <Text>1</Text> <Icon name='plus' type='feather' color='orange' size='17' style={{paddingLeft: 10}}/>  </Text>
+    <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>¢</Text> 1,200.00   <Icon name='minus' type='feather' color='black' size='17' style={{paddingLeft: 80}}/> <Text>1</Text> <Icon name='plus' type='feather' color='#00ace6' size='17' style={{paddingLeft: 10}}/>  </Text>
     </View>
     </View>
     </TouchableOpacity>
@@ -38,9 +38,9 @@ function Cartlist({navigation}) {
     <Image source={air2} style={styles.imgStyle} />
     </TouchableOpacity>
     <View style={styles.container1}>
-    <Text style={{paddingTop:0, paddingLeft:15, paddingBottom:7, fontSize:18}}>Nike Houraches  <Icon name='trash-2' type='feather' color='orange' size='17' style={{paddingLeft: 100, paddingTop:17}}/></Text>
+    <Text style={{paddingTop:0, paddingLeft:15, paddingBottom:7, fontSize:18}}>Nike Houraches  <Icon name='trash-2' type='feather' color='#00ace6' size='17' style={{paddingLeft: 100, paddingTop:17}}/></Text>
     <Text style={{ paddingLeft:15, paddingBottom:8, color:'grey'}}>Mountain Bike </Text>
-    <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'orange'}}>¢</Text>1,200.00   <Icon name='minus' type='feather' color='black' size='17' style={{paddingLeft: 80}}/> <Text>1</Text> <Icon name='plus' type='feather' color='orange' size='17' style={{paddingLeft: 10}}/>  </Text>
+    <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>¢</Text>1,200.00   <Icon name='minus' type='feather' color='black' size='17' style={{paddingLeft: 80}}/> <Text>1</Text> <Icon name='plus' type='feather' color='#00ace6' size='17' style={{paddingLeft: 10}}/>  </Text>
     </View>
     </View>
     </TouchableOpacity>
@@ -51,17 +51,17 @@ function Cartlist({navigation}) {
     <Image source={air2} style={styles.imgStyle} />
     </TouchableOpacity>
     <View style={styles.container1}>
-    <Text style={{paddingTop:0, paddingLeft:15, paddingBottom:7, fontSize:18}}>Nike Houraches  <Icon name='trash-2' type='feather' color='orange' size='17' style={{paddingLeft: 100, paddingTop:17}}/></Text>
+    <Text style={{paddingTop:0, paddingLeft:15, paddingBottom:7, fontSize:18}}>Nike Houraches  <Icon name='trash-2' type='feather' color='#00ace6' size='17' style={{paddingLeft: 100, paddingTop:17}}/></Text>
     <Text style={{ paddingLeft:15, paddingBottom:8, color:'grey'}}>Mountain Bike </Text>
-    <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'orange'}}>¢</Text> 1,200.00   <Icon name='minus' type='feather' color='black' size='17' style={{paddingLeft: 80}}/> <Text>1</Text> <Icon name='plus' type='feather' color='orange' size='17' style={{paddingLeft: 10}}/>  </Text>
+    <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>¢</Text> 1,200.00   <Icon name='minus' type='feather' color='black' size='17' style={{paddingLeft: 80}}/> <Text>1</Text> <Icon name='plus' type='feather' color='#00ace6' size='17' style={{paddingLeft: 10}}/>  </Text>
     </View>
     </View>
     </TouchableOpacity>
 
     <View style={styles.container}>
     <TouchableOpacity style={styles.item1}>
-    <Text style={{paddingTop:20, paddingLeft:25,  paddingRight:95, paddingBottom:15, fontSize:18, color:'grey'}}>Subtotal <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'orange'}}>$</Text> 1,200.00 </Text> </Text>
-    <Text style={{ paddingLeft:25, paddingBottom:8, color:'grey', fontSize:18}}>Shipping Fee <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'orange'}}>$</Text> 1,200.00 </Text>  </Text>
+    <Text style={{paddingTop:20, paddingLeft:25,  paddingRight:95, paddingBottom:15, fontSize:18, color:'grey'}}>Subtotal <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>$</Text> 1,200.00 </Text> </Text>
+    <Text style={{ paddingLeft:25, paddingBottom:8, color:'grey', fontSize:18}}>Shipping Fee <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>$</Text> 1,200.00 </Text>  </Text>
     <Text >.............................................................................................</Text>
     <Text style={{paddingTop:0, paddingLeft:20, paddingBottom:7,fontSize:20, fontWeight:'bold'}}>Total  <Text style={{paddingLeft: 250, paddingTop:17}} >$3,500.00</Text> </Text>
     </TouchableOpacity>
@@ -170,7 +170,7 @@ button1:{
   height:60,
   justifyContent:'center',
   borderRadius:15, 
-  backgroundColor:"#ff751a", 
+  backgroundColor:"#00ace6", 
   alignSelf:"center", 
   textAlign: "center" ,
   width:"80%",
