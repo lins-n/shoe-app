@@ -32,13 +32,13 @@ function Secondscreen({navigation}) {
             <Text style={{fontSize:15,paddingBottom:50, color:'#737373' }}>based on your interests and favourite brands </Text>
             
           <View style={styles.buttonsMain}>
-            <TouchableOpacity onPress={() => navigation.push('Cartlist')} style={styles.button} >
+            <TouchableOpacity onPress={() => navigation.push('Drawer')} style={styles.button} >
             <Text   
             style={{color:"black", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Login</Text> 
             </TouchableOpacity>
       
           
-            <TouchableOpacity  onPress={() => navigation.push('Cartlist')} style={styles.button1} >
+            <TouchableOpacity  onPress={() => navigation.push('Drawer')} style={styles.button1} >
             <Text  
             style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Signup</Text> 
             </TouchableOpacity>

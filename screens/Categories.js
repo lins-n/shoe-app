@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
-import { Icon } from 'react-native-elements'
+import { Icon } from 'react-native-elements';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import air from '../assets/air.png';
 import air2 from '../assets/air2.png';
@@ -23,13 +24,10 @@ function Categories({navigation}) {
     
     
     <View style={styles.categories}>
-    
-    <Icon name='bars' type='font-awesome' color='black' size='20'  style={{alignContent:'center',alignItems:'center',paddingTop:34 }}/>
          <TouchableOpacity style={styles.buttonCatnew} >
           <TextInput style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Search</TextInput> 
           </TouchableOpacity>
-    <Icon name='search' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 10}}/>
-    <Icon name='bell' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:40 , paddingLeft: 15}}/>
+    <Icon name='bell' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:13 , paddingLeft: 25}}/>
     </View> 
 
       <View style={styles.categories}>
@@ -221,7 +219,7 @@ const styles=StyleSheet.create({
       textAlign: "center" ,
       marginRight:10,
       marginLeft:45,
-      marginTop:27,
+      marginTop:0,
       
     },
 

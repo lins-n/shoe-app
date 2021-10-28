@@ -14,7 +14,7 @@ function Cartlist({navigation}) {
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:20}}>
    
     <View style={styles.categories}> 
-    <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.push('Cartlist')}   style={{alignContent:'center',alignItems:'center',paddingTop:30 }}/>
+    <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.push('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:30 }}/>
     <Text style={styles.fontStyle}> Cart List</Text>
     </View> 
     <Text style={{marginLeft:'37%', color:'#b3b3b3', }}> ( 3 Items ) </Text>
