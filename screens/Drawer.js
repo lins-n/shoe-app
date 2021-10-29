@@ -11,10 +11,14 @@ const Drawer = createDrawerNavigator();
 
 function Drawers() {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator >
         <Drawer.Screen name="Categories" component={Tabs}/>
         <Drawer.Screen name="Cartlist" component={Tabs} />
+
+       
       </Drawer.Navigator>
+
+       
   );
 }
 
