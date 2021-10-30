@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Categories from '../screens/Categories';
-import Secondscreen from '../screens/Secondscreen';
+import Landing from './Landing';
 import Cartlist from '../screens/Cartlist';
 import Tabs from '../component/Tabs';
 

@@ -5,6 +5,7 @@ import { Icon } from 'react-native-elements';
 import air from '../assets/air.png';
 
 
+
 function Shoedetail({navigation}) {
 
 

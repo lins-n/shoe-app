@@ -82,7 +82,7 @@ function Categories({navigation}) {
        </TouchableOpacity>
 
        <TouchableOpacity 
-       style={styles.imgCont1} onPress={() => navigation.push('Secondscreen')} >
+       style={styles.imgCont1} onPress={() => navigation.push('Landing')} >
        <Image source={air3} style={styles.imgStyle} />
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>¢1000.00</Text> 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/HomeScreen';
+import HomeScreen from '../screens/Login';
 import { Icon } from 'react-native-elements'
 import Categories from '../screens/Categories';
-import Secondscreen from '../screens/Secondscreen';
+import Landing from '../screens/Landing';
 import Cartlist from '../screens/Cartlist';
 import {StyleSheet, View} from 'react-native';
 const Tab = createBottomTabNavigator();
@@ -15,7 +15,7 @@ const Tabs = () => {
          options={{ tabBarLabel:() => {return null}, headerShown: false , tabBarIcon: ({color}) => 
          <Icon name='home' type='font-awesome' size='30' color='#b3b3b3'  style={styles.iconStyle} /> }}  />
 
-        <Tab.Screen name="Main" component={Secondscreen} 
+        <Tab.Screen name="Main" component={Landing} 
         options={{tabBarLabel:() => {return null}, headerShown: false , tabBarIcon: ({color}) => 
         <View style={styles.iconStyle1} >
           <Icon reverse name='plus' type='font-awesome' color='#00ace6' size= '27'  />

@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import logo from '../assets/logo.png';
 
-function Secondscreen({navigation}) {
+function Landing({navigation}) {
     return (
       // GOOD
     
@@ -32,19 +32,19 @@ function Secondscreen({navigation}) {
             <Text style={{fontSize:15,paddingBottom:50, color:'#737373' }}>based on your interests and favourite brands </Text>
             
           <View style={styles.buttonsMain}>
-            <TouchableOpacity onPress={() => navigation.push('Drawer')} style={styles.button} >
+            <TouchableOpacity onPress={() => navigation.push('Login')} style={styles.button} >
             <Text   
             style={{color:"black", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Login</Text> 
             </TouchableOpacity>
       
           
-            <TouchableOpacity  onPress={() => navigation.push('Drawer')} style={styles.button1} >
+            <TouchableOpacity  onPress={() => navigation.push('Signup')} style={styles.button1} >
             <Text  
             style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Signup</Text> 
             </TouchableOpacity>
           </View>
             <Text style={{fontSize:15, color:"#999999", marginTop:9}}> Not a member? 
-            <Text onPress={() => navigation.push('HomeScreen')} style={{fontWeight:'bold', color:'#00ace6'}}>Sign up</Text>
+            <Text onPress={() => navigation.push('Signup')} style={{fontWeight:'bold', color:'#00ace6'}}>Sign up</Text>
             </Text>
   
         
@@ -53,7 +53,7 @@ function Secondscreen({navigation}) {
     );
   }
 
-  export default Secondscreen;
+  export default Landing;
 
 
   const styles = StyleSheet.create({
