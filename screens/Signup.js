@@ -20,19 +20,19 @@ function Signup({navigation}) {
   
         <Text style={{color:"#00ace6"}}> Register </Text>
         <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Full Name</TextInput> 
+          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Full Name</TextInput> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Email</TextInput> 
+          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Email</TextInput> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Telephone</TextInput> 
+          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Telephone</TextInput> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput  secureTextEntry={true} style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Password</TextInput> 
+          <TextInput  secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Password</TextInput> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput secureTextEntry={true} style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Confirm Password</TextInput> 
+          <TextInput secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Confirm Password</TextInput> 
           </TouchableOpacity>
        
         
