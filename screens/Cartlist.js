@@ -11,10 +11,10 @@ function Cartlist({navigation}) {
   
 
 <ScrollView style={styles.scrollContainer}>
-    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:20}}>
+    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:30}}>
    
     <View style={styles.categories}> 
-    <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.push('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:0 }}/>
+    <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.push('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:10 }}/>
     <Text style={styles.fontStyle}> Cart List</Text>
     </View> 
     <Text style={{marginLeft:'37%', color:'#b3b3b3', }}> ( 3 Items ) </Text>
@@ -63,12 +63,12 @@ function Cartlist({navigation}) {
     <Text style={{paddingTop:20, paddingLeft:25,  paddingRight:95, paddingBottom:15, fontSize:18, color:'grey'}}>Subtotal <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>$</Text> 1,200.00 </Text> </Text>
     <Text style={{ paddingLeft:25, paddingBottom:8, color:'grey', fontSize:18}}>Shipping Fee <Text style={{ paddingLeft:10,fontSize:20, fontWeight:'bold'}}> <Text style={{color:'#00ace6'}}>$</Text> 1,200.00 </Text>  </Text>
     <Text >.............................................................................................</Text>
-    <Text style={{paddingTop:0, paddingLeft:20, paddingBottom:7,fontSize:20, fontWeight:'bold'}}>Total  <Text style={{paddingLeft: 250, paddingTop:17}} >$3,500.00</Text> </Text>
+    <Text style={{paddingTop:0, paddingLeft:20, paddingBottom:7,fontSize:20, fontWeight:'bold'}}>Total  <Text style={{paddingLeft: 250, paddingTop:17}} >$3,600.00</Text> </Text>
     </TouchableOpacity>
     </View>
 
-    <TouchableOpacity style={styles.button1} >
-            <Text   onPress={() => navigation.push('Cartlist')}
+            <TouchableOpacity style={styles.button1} >
+            <Text   onPress={() => navigation.push('Checkout')}
             style={{color:"white", fontSize:20, fontWeight: 'bold', }}>               Process to Checkout</Text> 
             </TouchableOpacity>
     

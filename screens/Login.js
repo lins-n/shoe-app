@@ -22,7 +22,7 @@ function Login({navigation}) {
           <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Email</TextInput> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Password</TextInput> 
+          <TextInput secureTextEntry={true} keyboardType="default" style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}>Password</TextInput> 
           </TouchableOpacity>
 
             <TouchableOpacity style={styles.buttonMain}  onPress={() => navigation.push('Drawer')}  >
@@ -48,7 +48,7 @@ function Login({navigation}) {
         textAlign: "center" ,
         width:"80%",
         marginTop:15,
-        marginTop:50,
+        
       },
       buttonCatnew:{
         width:330,

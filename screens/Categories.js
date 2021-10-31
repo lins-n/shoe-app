@@ -2,8 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { Icon } from 'react-native-elements';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import air from '../assets/air.png';
 import air2 from '../assets/air2.png';
 import air3 from '../assets/air3.png';
@@ -91,7 +89,7 @@ function Categories({navigation}) {
        
        <ScrollView>
       <View style={styles.categories2}>
-      <TouchableOpacity style={styles.imgCont2}>
+      <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air5} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>¢700.00</Text>
@@ -110,13 +108,13 @@ function Categories({navigation}) {
     
 
        <View style={styles.imgStyle1}>
-       <TouchableOpacity style={styles.imgCont1}>
+       <TouchableOpacity style={styles.imgCont1} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air4} style={styles.imgStyle} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
       <Text style={styles.textStyle2}>¢900.00</Text>
        </TouchableOpacity>
 
-       <TouchableOpacity style={styles.imgCont1}>
+       <TouchableOpacity style={styles.imgCont1} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air2} style={styles.imgStyle} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
       <Text style={styles.textStyle2}>¢1700.00</Text>
@@ -126,13 +124,13 @@ function Categories({navigation}) {
 
        <ScrollView>
       <View style={styles.categories2}>
-      <TouchableOpacity style={styles.imgCont2}>
+      <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air6} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>¢500.00</Text>
        </TouchableOpacity>
 
-       <TouchableOpacity style={styles.imgCont2}>
+       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>¢500.00</Text>

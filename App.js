@@ -13,6 +13,8 @@ import Shoedetail from './screens/Shoedetail';
 import Drawer from './screens/Drawer';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
+import Checkout from './screens/Checkout';
+import Thanks from './screens/Thanks';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +32,8 @@ export default function App() {
         <Stack.Screen name ="Drawer"  component ={Drawer} options={{headerShown: false}} />
         <Stack.Screen name ="Login"  component ={Login} options={{headerShown: false}} />
         <Stack.Screen name ="Signup"  component ={Signup} options={{headerShown: false}} />
+        <Stack.Screen name ="Checkout"  component ={Checkout} options={{headerShown: false}} />
+        <Stack.Screen name ="Thanks"  component ={Thanks} options={{headerShown: false}} />
       </Stack.Navigator>
 
     </NavigationContainer>
