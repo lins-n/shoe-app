@@ -64,8 +64,8 @@ function Checkout({navigation}) {
                         
             </View>
 
-            <TouchableOpacity style={styles.button1} >
-            <Text onPress={setInput}
+            <TouchableOpacity style={styles.button2}  >
+            <Text 
             style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center',}}>Buy Now</Text> 
             </TouchableOpacity>
 
@@ -130,7 +130,7 @@ const styles= StyleSheet.create({
             marginLeft:30,
             marginTop:0,
           },
-          button1:{
+          button2:{
   
             height:60,
             justifyContent:'center',
