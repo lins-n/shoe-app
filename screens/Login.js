@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 
 function Login({navigation}) {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor:'white' }}>
 
         <TouchableOpacity style={styles.roundShape}>
         <TouchableOpacity style={styles.roundShape1}>

@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 
 function Signup({navigation}) {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' , backgroundColor:'white'}}>
 
         <TouchableOpacity style={styles.roundShape}>
         <TouchableOpacity style={styles.roundShape1}>
@@ -39,8 +39,8 @@ function Signup({navigation}) {
       
   
   
-            <TouchableOpacity style={styles.buttonMain} >
-            <Text  onPress={() => navigation.push('Drawer')} style={{color:"white", fontSize:18, fontWeight: 'bold', textAlign:'center'}}>Register</Text> 
+            <TouchableOpacity style={styles.buttonMain} onPress={() => navigation.push('Drawer')}  >
+            <Text  style={{color:"white", fontSize:18, fontWeight: 'bold', textAlign:'center'}}>Register</Text> 
             
             </TouchableOpacity>
   

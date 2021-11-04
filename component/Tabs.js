@@ -15,7 +15,7 @@ const Tabs = () => {
          options={{ tabBarLabel:() => {return null}, headerShown: false , tabBarIcon: ({color}) => 
          <Icon name='home' type='font-awesome' size='30' color='#b3b3b3'  style={styles.iconStyle} /> }}  />
 
-        <Tab.Screen name="Main" component={Landing} 
+        <Tab.Screen name="Main" component={Categories} 
         options={{tabBarLabel:() => {return null}, headerShown: false , tabBarIcon: ({color}) => 
         <View style={styles.iconStyle1} >
           <Icon reverse name='plus' type='font-awesome' color='#00ace6' size= '27'  />
