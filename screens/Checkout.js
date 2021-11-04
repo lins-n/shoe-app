@@ -1,10 +1,29 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
+import { Alert, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { Icon } from 'react-native-elements';
 import card3 from '../assets/card3.png';
 
 
 
+const showAlert = ({navigation}) =>
+  Alert.alert(
+    "Purchase Succesful",
+    "Congratulations!! You have successfully purchased your items.",
+    [
+      {
+        text: "Done",
+        
+        style: "cancel",
+      },
+    ],
+    {
+      cancelable: true,
+      onDismiss: () =>
+        Alert.alert(
+          "This alert was dismissed by tapping outside of the alert dialog."
+        ),
+    }
+  );
 
 function Checkout({navigation}) {
 
@@ -40,14 +59,14 @@ function Checkout({navigation}) {
                 <View>
                 <Text style={styles.cardStyle}> EXPIRY DATE </Text>
                 <TouchableOpacity style={styles.buttonCat} >
-                <TextInput style={{color:"black", fontSize:15,paddingLeft:10, }}  onChangeText={(text)=> setInput(text)}/>
+                <TextInput style={{color:"black", fontSize:15,paddingLeft:10, }}  />
                 </TouchableOpacity>
                 </View>
 
                 <View>
                 <Text style={styles.cardStyle}> CVV </Text>
                 <TouchableOpacity style={styles.buttonCat} >
-                <TextInput codeLength={3} keyboardType='numeric' style={{color:"black", fontSize:15,paddingLeft:10, }}  onChangeText={(text)=> setInput(text)} />
+                <TextInput codeLength={3} keyboardType='numeric' style={{color:"black", fontSize:15,paddingLeft:10, }}   />
                 </TouchableOpacity>
                 </View>
                         
@@ -64,10 +83,12 @@ function Checkout({navigation}) {
                         
             </View>
 
-            <TouchableOpacity style={styles.button2}  >
+            <TouchableOpacity style={styles.button2} onPress={showAlert} >
             <Text 
-            style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center',}}>Buy Now</Text> 
+            style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center',}}  >Buy Now</Text> 
             </TouchableOpacity>
+
+            <Text style={{fontSize:15,paddingBottom: 30, textAlign:'center', color:'#8c8c8c'}} onPress={() => navigation.push('Drawer')}  > Return to Main menu </Text> 
 
             </ScrollView>
         </View>
@@ -141,7 +162,7 @@ const styles= StyleSheet.create({
             width:"85%",
             marginTop:20,
             marginRight:0,
-            marginBottom:280,
+            marginBottom:20,
           },
 
 });

@@ -116,7 +116,7 @@ const styles= StyleSheet.create({
   categories1:{
     flexDirection:'row',
     paddingTop:10,
-    paddingBottom:40,
+    paddingBottom:90,
     paddingLeft:5,
   },
 

@@ -11,7 +11,7 @@ function Cartlist({navigation}) {
   
 
 <ScrollView style={styles.scrollContainer}>
-    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:30}}>
+    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:23, backgroundColor:'white',paddingTop:30}}>
    
     <View style={styles.categories}> 
     <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.push('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:10 }}/>
@@ -68,7 +68,7 @@ function Cartlist({navigation}) {
     </View>
 
             <TouchableOpacity style={styles.button1} >
-            <Text   onPress={() => navigation.push('Checkout')}
+            <Text   onPress={() => navigation.navigate('Checkout')}
             style={{color:"white", fontSize:20, fontWeight: 'bold', }}>               Process to Checkout</Text> 
             </TouchableOpacity>
     

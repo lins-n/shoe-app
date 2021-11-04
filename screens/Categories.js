@@ -17,20 +17,11 @@ function Categories({navigation}) {
   
 
   <ScrollView style={styles.scrollContainer}>
-    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:20, backgroundColor:'#f2f6f7',paddingTop:20}}>
-    
-    
-    
-    <View style={styles.categories}>
-         <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#d9d9d9", fontSize:15,paddingLeft:10, }}>Search</TextInput> 
-          </TouchableOpacity>
-    <Icon name='bell' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:13 , paddingLeft: 25}}/>
-    </View> 
-
+    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:20, backgroundColor:'white',paddingTop:0}}>
+  
       <View style={styles.categories}>
       <Text style={styles.mainStyle1}> Shoes </Text>
-      <Text style={{fontSize:15, paddingTop:33, color:"#b3b3b3"}}> Sort by </Text>
+      <Text style={{fontSize:15, paddingTop:33,  paddingLeft:230, color:"#b3b3b3"}}> Sort by </Text>
       </View>
 
 
@@ -171,21 +162,30 @@ function Categories({navigation}) {
 const styles=StyleSheet.create({
   categories:{
     flexDirection:'row',
+    paddingBottom:5,
   },
 
   categories2:{
     flexDirection:'row',
     paddingBottom:15,
+    shadowColor: '#cccccc',
+      shadowOpacity: 0.3,
+      shadowRadius: 10,
+      
+      shadowOffset: {
+          width: 0,            
+          height: 5,           
+      },
   },
 
 
   mainStyle1:{
-    height: 50,
-    width: "80%",
     marginTop:"5%" , 
     textAlign:"left",
     fontSize: 30, 
-    fontWeight: 'bold', color:"#262626",
+    fontWeight: 'bold', 
+    color:"#262626",
+    
     },
 
      textStyle2:{
@@ -205,6 +205,14 @@ const styles=StyleSheet.create({
       textAlign: "left" ,
       marginBottom:20,
       marginRight:10,
+      shadowColor: '#cccccc',
+      shadowOpacity: 0.3,
+      shadowRadius: 10,
+      
+      shadowOffset: {
+          width: 0,            
+          height: 5,           
+      },
       
     },
 
@@ -264,7 +272,14 @@ const styles=StyleSheet.create({
       borderRadius:25, 
       marginRight:15, 
       backgroundColor:"white",
-  
+      shadowColor: '#cccccc',
+      shadowOpacity: 0.3,
+      shadowRadius: 10,
+      
+      shadowOffset: {
+          width: 0,            
+          height: 5,           
+      },
     
     },
 
