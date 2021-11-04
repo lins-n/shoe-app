@@ -39,7 +39,7 @@ function Checkout({navigation}) {
             <Text style={{ textAlign:'center', fontSize:20,}}> Enter Card Details </Text>
             
             <Text style={styles.cardStyle}> CARD NAME </Text>
-            <TouchableOpacity style={styles.buttonCatnew} >
+            <TouchableOpacity style={styles.buttonCatnew}  >
             <TextInput 
             style={{color:"black", fontSize:15,paddingLeft:10, }}
             value={input}
@@ -48,25 +48,26 @@ function Checkout({navigation}) {
                 alert("Your Card Name is: + {value} ");
                 setInput('');
             }}
+            placeholder=' Enter Card Name '
             />
             </TouchableOpacity>
             <Text style={styles.cardStyle}> CARD NUMBER </Text>
             <TouchableOpacity style={styles.buttonCatnew} >
-            <TextInput keyboardType="default" style={{color:"black", fontSize:15,paddingLeft:10, }} />
+            <TextInput keyboardType="default" style={{color:"black", fontSize:15,paddingLeft:10, }} placeholder=' Enter Card Number ' />
             </TouchableOpacity>
 
             <View style={styles.categories}>
                 <View>
                 <Text style={styles.cardStyle}> EXPIRY DATE </Text>
                 <TouchableOpacity style={styles.buttonCat} >
-                <TextInput style={{color:"black", fontSize:15,paddingLeft:10, }}  />
+                <TextInput style={{color:"black", fontSize:15,paddingLeft:10, }} placeholder=' Enter Date '  />
                 </TouchableOpacity>
                 </View>
 
                 <View>
                 <Text style={styles.cardStyle}> CVV </Text>
                 <TouchableOpacity style={styles.buttonCat} >
-                <TextInput codeLength={3} keyboardType='numeric' style={{color:"black", fontSize:15,paddingLeft:10, }}   />
+                <TextInput codeLength={3} keyboardType='numeric' style={{color:"black", fontSize:15,paddingLeft:10, }} placeholder=' Enter CVV '  />
                 </TouchableOpacity>
                 </View>
                         

@@ -60,20 +60,20 @@ function Categories({navigation}) {
       
       <View style={styles.imgStyle1}>
         <TouchableOpacity 
-        style={styles.imgCont1} onPress={() => navigation.push('Cartlist')} >
+        style={styles.imgCont1} onPress={() => navigation.push('Shoedetail')} >
         <View>
         <ImageBackground source={air2} style={styles.imgStyle} >
         
         </ImageBackground> 
         </View>
-        <Text style={styles.textStyle1}>Nike Hourache</Text>
+        <Text style={styles.textStyle1}>Nike Hourache Purple</Text>
         <Text style={styles.textStyle2}>¢600.00</Text>
        </TouchableOpacity>
 
        <TouchableOpacity 
-       style={styles.imgCont1} onPress={() => navigation.push('Landing')} >
+       style={styles.imgCont1} onPress={() => navigation.push('shoedetail')} >
        <Image source={air3} style={styles.imgStyle} />
-       <Text style={styles.textStyle1}>Nike Hourache</Text>
+       <Text style={styles.textStyle1}>Nike Air Max</Text>
        <Text style={styles.textStyle2}>¢1000.00</Text> 
        </TouchableOpacity>
        </View>
@@ -117,7 +117,7 @@ function Categories({navigation}) {
       <View style={styles.categories2}>
       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air6} style={styles.imgStylenew} /> 
-       <Text style={styles.textStyle1}>Nike Hourache</Text>
+       <Text style={styles.textStyle1}>Nike Air Max</Text>
        <Text style={styles.textStyle2}>¢500.00</Text>
        </TouchableOpacity>
 
