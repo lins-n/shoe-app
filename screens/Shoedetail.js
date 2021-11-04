@@ -13,7 +13,7 @@ function Shoedetail({navigation}) {
     // GOOD
   
 
-<ScrollView style={styles.scrollContainer}>
+<ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} >
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:20}}>
    
     <View style={styles.categories}> 
@@ -36,7 +36,7 @@ function Shoedetail({navigation}) {
     <Image source={air} style={styles.imgStylenew}  /> 
     <Text style={{ paddingLeft:5, paddingBottom:10, paddingTop:10, color:'grey', fontSize:20, fontWeight:'bold'}}>Size</Text>
 
-    <ScrollView>
+    <ScrollView showsHorizontalScrollIndicator={false}>
       <View style={styles.categories}>
           <TouchableOpacity style={styles.buttonCat} >
           <Text style={{color:"#666666", fontSize:20,fontWeight: 'bold',  }}>    9    </Text> 

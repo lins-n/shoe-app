@@ -16,7 +16,7 @@ function Categories({navigation}) {
    
   
 
-  <ScrollView style={styles.scrollContainer}>
+  <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} >
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:20, backgroundColor:'white',paddingTop:0}}>
   
       <View style={styles.categories}>
@@ -25,7 +25,7 @@ function Categories({navigation}) {
       </View>
 
 
-      <ScrollView>
+      <ScrollView showsHorizontalScrollIndicator={false} >
       <View style={styles.categories}>
       <TouchableOpacity style={styles.buttonCat} >
           <Text 
@@ -78,7 +78,7 @@ function Categories({navigation}) {
        </TouchableOpacity>
        </View>
        
-       <ScrollView>
+       <ScrollView showsHorizontalScrollIndicator={false} >
       <View style={styles.categories2}>
       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air5} style={styles.imgStylenew} /> 
@@ -113,7 +113,7 @@ function Categories({navigation}) {
        </View>
 
 
-       <ScrollView>
+       <ScrollView showsHorizontalScrollIndicator={false} >
       <View style={styles.categories2}>
       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air6} style={styles.imgStylenew} /> 

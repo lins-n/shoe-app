@@ -32,7 +32,7 @@ function Checkout({navigation}) {
     return (
 
         <View style={styles.Checkout}>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={{textAlign:'center', paddingBottom:20,}}> Choose a card to complete your purchase </Text>
             <Image source={card3} style={styles.imgStylenew}  />
             

@@ -10,7 +10,7 @@ function Cartlist({navigation}) {
     // GOOD
   
 
-<ScrollView style={styles.scrollContainer}>
+<ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} >
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:23, backgroundColor:'white',paddingTop:30}}>
    
     <View style={styles.categories}> 
