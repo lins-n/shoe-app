@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button,useState ,StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { Icon } from 'react-native-elements';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import air from '../assets/air.png';
 
 
@@ -12,7 +13,7 @@ function Shoedetail({navigation}) {
   return (
     // GOOD
   
-
+<SafeAreaView>
 <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} >
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:20}}>
    
@@ -104,6 +105,7 @@ function Shoedetail({navigation}) {
            
     </View>
     </ScrollView>
+    </SafeAreaView>
   );
 }
   

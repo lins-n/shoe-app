@@ -48,7 +48,7 @@ const  allStyles = {
         width: "80%",
         marginBottom:"10%" , 
         textAlign:"center",
-        fontSize: 30, 
+        fontSize:30, 
         fontWeight: 'bold', color:"#262626",
         },
   

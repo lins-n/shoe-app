@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { Icon } from 'react-native-elements';
 import air2 from '../assets/air2.png';
 
@@ -9,9 +9,9 @@ function Cartlist({navigation}) {
   return (
     // GOOD
   
-
+<SafeAreaView>
 <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} >
-    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:23, backgroundColor:'white',paddingTop:45}}>
+    <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:23, backgroundColor:'white',paddingTop:10}}>
    
     <View style={styles.categories}> 
     <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.navigate('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:0 }}/>
@@ -77,6 +77,7 @@ function Cartlist({navigation}) {
            
     </View>
     </ScrollView>
+    </SafeAreaView>
   );
 }
   

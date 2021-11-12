@@ -1,6 +1,7 @@
 import React from 'react';
 import { Alert, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { Icon } from 'react-native-elements';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import card3 from '../assets/card3.png';
 
 
@@ -30,7 +31,7 @@ function Checkout({navigation}) {
     const [input,setInput,] = React.useState("");
     
     return (
-
+      <SafeAreaView>
         <View style={styles.Checkout}>
             <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={{textAlign:'center', paddingBottom:20,}}> Choose a card to complete your purchase </Text>
@@ -93,6 +94,7 @@ function Checkout({navigation}) {
 
             </ScrollView>
         </View>
+        </SafeAreaView>
     );
 }
 

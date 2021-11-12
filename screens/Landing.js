@@ -3,14 +3,15 @@ import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import logo from '../assets/logo.png';
 import allStyles from '../allStyles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 function Landing({navigation}) {
     return (
       // GOOD
     
+      <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' , backgroundColor:'white'}} >
   
-  
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' , backgroundColor:'white'}}>
+      <View style={{ alignItems: 'center', justifyContent: 'center' ,}}>
         
         
         
@@ -47,6 +48,7 @@ function Landing({navigation}) {
         
         
       </View>
+      </SafeAreaView>
     );
   }
 

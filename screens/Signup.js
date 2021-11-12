@@ -1,11 +1,13 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View , TextInput, TouchableOpacity} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import logo from '../assets/logo.png';
 
 
 function Signup({navigation}) {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' , backgroundColor:'white'}}>
+      <SafeAreaView style={{ flex: 1, justifyContent:'center', backgroundColor:'white'}} >
+      <View style={{  alignItems: 'center',}}>
 
         <TouchableOpacity style={styles.roundShape}>
         <TouchableOpacity style={styles.roundShape1}>
@@ -50,6 +52,7 @@ function Signup({navigation}) {
   
   
       </View>
+      </SafeAreaView>
     );
   }
 

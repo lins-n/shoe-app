@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import { Icon } from 'react-native-elements';
 import air from '../assets/air.png';
 import air2 from '../assets/air2.png';
@@ -15,7 +15,7 @@ function Categories({navigation}) {
   return (
    
   
-
+    <SafeAreaView>
   <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} >
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:20, backgroundColor:'white',paddingTop:0}}>
   
@@ -78,9 +78,8 @@ function Categories({navigation}) {
        </TouchableOpacity>
        </View>
        
-       <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} >
-      
-      <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
+      <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} >
+       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air5} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
        <Text style={styles.textStyle2}>¢700.00</Text>
@@ -149,7 +148,7 @@ function Categories({navigation}) {
         /> */}
     </View>
     </ScrollView>
-
+    </SafeAreaView>
     
     
   );
@@ -244,16 +243,16 @@ const styles=StyleSheet.create({
       height: 200, 
       borderRadius:25, 
       
-      marginLeft: 18,
+      marginLeft: 8,
   
     
     },
     imgStylenew:{
-      width: 340, 
+      width: 338, 
       height: 200, 
       borderRadius:25, 
       
-      marginLeft: 15,
+      marginLeft: 5,
   
     
     },
@@ -280,11 +279,12 @@ const styles=StyleSheet.create({
     },
 
     imgCont2:{
-      width: 370, 
+      width: '53%', 
       height: 250, 
       borderRadius:25, 
       marginRight:15, 
       marginBottom:15,
+      marginTop:8,
       backgroundColor:"white",
       shadowColor: '#cccccc',
       shadowOpacity: 0.3,
@@ -314,7 +314,7 @@ const styles=StyleSheet.create({
     flex:1,
     flexDirection:'row',
     justifyContent: 'flex-start',
-    width: 200, 
+    width: "50%", 
     height: 250, 
     borderRadius:25, 
     marginBottom: 20,

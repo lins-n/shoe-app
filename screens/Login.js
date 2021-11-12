@@ -1,11 +1,13 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View , TextInput, TouchableOpacity} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import logo from '../assets/logo.png';
 
 
 function Login({navigation}) {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor:'white' }}>
+      <SafeAreaView style={{ flex: 1,backgroundColor:'white', justifyContent:'center' }} >
+      <View style={{  alignItems: 'center',}}>
 
         <TouchableOpacity style={styles.roundShape}>
         <TouchableOpacity style={styles.roundShape1}>
@@ -24,16 +26,19 @@ function Login({navigation}) {
           <TouchableOpacity style={styles.buttonCatnew} >
           <TextInput secureTextEntry={true} keyboardType="default" style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }} placeholder=' Password'/>
           </TouchableOpacity>
-
-            <TouchableOpacity style={styles.buttonMain}  onPress={() => navigation.push('Drawer')}  >
-            <Text  style={{color:"white", fontSize:18, fontWeight: 'bold', textAlign:'center'}}>Login</Text> 
+          
             
-            </TouchableOpacity>
+              <TouchableOpacity style={styles.buttonMain}  onPress={() => navigation.push('Drawer')}  >
+              <Text  style={{color:"white", fontSize:18, fontWeight: 'bold', textAlign:'center'}}>Login</Text> 
+              
+              </TouchableOpacity>
+            
             <Text style={{color:"#00ace6", marginTop:20, }}> Dont have an account? <Text style={{fontWeight:'bold'}} onPress={() => navigation.push('Signup')}  > Signup </Text>  </Text>
   
   
   
       </View>
+      </SafeAreaView>
     );
   }
 
@@ -43,10 +48,9 @@ function Login({navigation}) {
         height:55, 
         justifyContent:'center',
         borderRadius:15, 
-        backgroundColor:"#00ace6", 
-        alignSelf:"center", 
-        textAlign: "center" ,
-        width:"80%",
+        backgroundColor:"#00ace6",
+        alignContent: 'center',
+        width:'80%',
         marginTop:15,
         
       },
