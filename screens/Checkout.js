@@ -53,21 +53,21 @@ function Checkout({navigation}) {
             </TouchableOpacity>
             <Text style={styles.cardStyle}> CARD NUMBER </Text>
             <TouchableOpacity style={styles.buttonCatnew} >
-            <TextInput keyboardType="default" style={{color:"black", fontSize:15,paddingLeft:10, }} placeholder=' Enter Card Number ' />
+            <TextInput keyboardType="default" style={{color:"black", fontSize:15, paddingLeft:10, }} placeholder=' Enter Card Number ' />
             </TouchableOpacity>
 
             <View style={styles.categories}>
                 <View>
                 <Text style={styles.cardStyle}> EXPIRY DATE </Text>
                 <TouchableOpacity style={styles.buttonCat} >
-                <TextInput style={{color:"black", fontSize:15,paddingLeft:10, }} placeholder=' Enter Date '  />
+                <TextInput style={{color:"black", fontSize:15, paddingLeft:10, }} placeholder=' Enter Date '  />
                 </TouchableOpacity>
                 </View>
 
                 <View>
                 <Text style={styles.cardStyle}> CVV </Text>
                 <TouchableOpacity style={styles.buttonCat} >
-                <TextInput codeLength={3} keyboardType='numeric' style={{color:"black", fontSize:15,paddingLeft:10, }} placeholder=' Enter CVV '  />
+                <TextInput codeLength={3} keyboardType='numeric' style={{color:"black", fontSize:15, paddingLeft:10, }} placeholder=' Enter CVV '  />
                 </TouchableOpacity>
                 </View>
                         
@@ -75,11 +75,11 @@ function Checkout({navigation}) {
 
             <View style={styles.categories}>
                 <View>
-                <Text style={{fontSize:20,paddingTop:40,paddingLeft:30,}}> Payment Amount  </Text>
+                <Text style={{fontSize:20, paddingTop:40,paddingLeft:30,}}> Payment Amount  </Text>
                 </View>
 
                 <View>
-                <Text style={{fontSize:25,paddingTop:37,paddingLeft:30, fontWeight:'bold', color:'#00ace6',}}> ¢3,600.00 </Text>
+                <Text style={{fontSize:25, paddingTop:37,paddingLeft:30, fontWeight:'bold', color:'#00ace6',}}> ¢3,600.00 </Text>
                 </View>
                         
             </View>
@@ -89,7 +89,7 @@ function Checkout({navigation}) {
             style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center',}}  >Buy Now</Text> 
             </TouchableOpacity>
 
-            <Text style={{fontSize:15,paddingBottom: 30, textAlign:'center', color:'#8c8c8c'}} onPress={() => navigation.push('Drawer')}  > Return to Main menu </Text> 
+            <Text style={{fontSize:15, paddingBottom: 30, textAlign:'center', color:'#8c8c8c'}} onPress={() => navigation.push('Drawer')}  > Return to Main menu </Text> 
 
             </ScrollView>
         </View>

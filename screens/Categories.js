@@ -25,8 +25,8 @@ function Categories({navigation}) {
       </View>
 
 
-      <ScrollView showsHorizontalScrollIndicator={false} >
-      <View style={styles.categories}>
+      <ScrollView showsHorizontalScrollIndicator={false}  horizontal={true} >
+      {/* <View style={styles.categories}> */}
       <TouchableOpacity style={styles.buttonCat} >
           <Text 
           style={{color:"#00ace6", fontSize:20,fontWeight: 'bold',  }}>    All    </Text> 
@@ -51,7 +51,7 @@ function Categories({navigation}) {
           <Text 
           style={{color:"#666666", fontSize:20, }}>    Churchshoe    </Text> 
           </TouchableOpacity>
-      </View>
+      {/* </View> */}
       </ScrollView>
 
       
@@ -71,15 +71,15 @@ function Categories({navigation}) {
        </TouchableOpacity>
 
        <TouchableOpacity 
-       style={styles.imgCont1} onPress={() => navigation.push('shoedetail')} >
+       style={styles.imgCont1} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air3} style={styles.imgStyle} />
        <Text style={styles.textStyle1}>Nike Air Max</Text>
        <Text style={styles.textStyle2}>¢1000.00</Text> 
        </TouchableOpacity>
        </View>
        
-       <ScrollView showsHorizontalScrollIndicator={false} >
-      <View style={styles.categories2}>
+       <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} >
+      
       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air5} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Hourache</Text>
@@ -92,8 +92,6 @@ function Categories({navigation}) {
        <Text style={styles.textStyle2}>¢700.00</Text>
        </TouchableOpacity>
 
-
-      </View>
       </ScrollView>
 
     
@@ -113,8 +111,8 @@ function Categories({navigation}) {
        </View>
 
 
-       <ScrollView showsHorizontalScrollIndicator={false} >
-      <View style={styles.categories2}>
+       <ScrollView showsHorizontalScrollIndicator={false}  horizontal={true} >
+      
       <TouchableOpacity style={styles.imgCont2} onPress={() => navigation.push('Shoedetail')} >
        <Image source={air6} style={styles.imgStylenew} /> 
        <Text style={styles.textStyle1}>Nike Air Max</Text>
@@ -127,8 +125,6 @@ function Categories({navigation}) {
        <Text style={styles.textStyle2}>¢500.00</Text>
        </TouchableOpacity>
 
-
-      </View>
       </ScrollView>
 
    
@@ -288,8 +284,16 @@ const styles=StyleSheet.create({
       height: 250, 
       borderRadius:25, 
       marginRight:15, 
+      marginBottom:15,
       backgroundColor:"white",
-  
+      shadowColor: '#cccccc',
+      shadowOpacity: 0.3,
+      shadowRadius: 10,
+      
+      shadowOffset: {
+          width: 0,            
+          height: 5,           
+      },
     
     },
 
@@ -314,6 +318,7 @@ const styles=StyleSheet.create({
     height: 250, 
     borderRadius:25, 
     marginBottom: 20,
+    paddingTop:5,
     
     
     

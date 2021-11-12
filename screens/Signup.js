@@ -20,19 +20,19 @@ function Signup({navigation}) {
   
         <Text style={{color:"#00ace6"}}> Register </Text>
         <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }} placeholder=' Name'/> 
+          <TextInput style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }} placeholder=' Name'/> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }} placeholder=' Email'/> 
+          <TextInput style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }} placeholder=' Email'/> 
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}placeholder=' Telephone'/>
+          <TextInput style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }}placeholder=' Telephone'/>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput  secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }} placeholder=' Password'/>
+          <TextInput  secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }} placeholder=' Password'/>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }}  placeholder=' Verify Password'/>
+          <TextInput secureTextEntry={true} style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }}  placeholder=' Verify Password'/>
           </TouchableOpacity>
        
         
@@ -44,7 +44,7 @@ function Signup({navigation}) {
             
             </TouchableOpacity>
   
-            <Text style={{color:"#00ace6", marginTop:20, }}> Have an account? <Text style={{fontWeight:'bold'}} onPress={() => navigation.push('Login')}  > Login</Text>  </Text>
+            <Text style={{color:"#00ace6", marginTop:20, }}> Have an account? <Text style={{fontWeight:'bold'}} onPress={() => navigation.navigate('Login')}  > Login</Text>  </Text>
           
   
   
@@ -84,7 +84,7 @@ function Signup({navigation}) {
         width: "80%", 
         borderBottomWidth:1, 
         marginBottom:"5%", 
-        fontSize: 20,
+        fontSize:20,
         },
 
       mainStyled:{
@@ -92,7 +92,7 @@ function Signup({navigation}) {
         width: "80%",
         marginTop:"2%" , 
         textAlign:"center",
-        fontSize: 40, 
+        fontSize:40, 
         fontWeight: 'bold', color:"#262626",
         },
 

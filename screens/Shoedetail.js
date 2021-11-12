@@ -17,7 +17,7 @@ function Shoedetail({navigation}) {
     <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' ,paddingLeft:17, backgroundColor:'white',paddingTop:20}}>
    
     <View style={styles.categories}> 
-    <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.push('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:30, paddingBottom:15 }}/>
+    <Icon name='arrow-left' type='feather' color='#b3b3b3' onPress={() => navigation.navigate('Drawer')}   style={{alignContent:'center',alignItems:'center',paddingTop:30, paddingBottom:15 }}/>
     
     </View> 
     
@@ -36,14 +36,14 @@ function Shoedetail({navigation}) {
     <Image source={air} style={styles.imgStylenew}  /> 
     <Text style={{ paddingLeft:5, paddingBottom:10, paddingTop:10, color:'grey', fontSize:20, fontWeight:'bold'}}>Size</Text>
 
-    <ScrollView showsHorizontalScrollIndicator={false}>
-      <View style={styles.categories}>
+    <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}  >
+      
           <TouchableOpacity style={styles.buttonCat} >
-          <Text style={{color:"#666666", fontSize:20,fontWeight: 'bold',  }}>    9    </Text> 
+          <Text style={{color:"#666666", fontSize:20, fontWeight: 'bold',  }}>    9    </Text> 
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.buttonCatnew} >
-          <Text style={{color:"white", fontSize:20,fontWeight: 'bold' }}>    9.5    </Text> 
+          <Text style={{color:"white", fontSize:20, fontWeight: 'bold' }}>    9.5    </Text> 
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.buttonCat} >
@@ -57,14 +57,14 @@ function Shoedetail({navigation}) {
           <TouchableOpacity style={styles.buttonCat} >
           <Text style={{color:"#666666", fontSize:20, fontWeight: 'bold'}}>    11    </Text> 
           </TouchableOpacity>
-      </View>
+      
       </ScrollView>
 
 
       
       
-      <ScrollView>
-      <View style={styles.categories}>
+      <ScrollView horizontal={true}  showsHorizontalScrollIndicator={false} >
+      
       <TouchableOpacity style={styles.imgBackg} >
       <Image source={air} style={styles.imgStyle2}  /> 
       </TouchableOpacity>
@@ -76,7 +76,7 @@ function Shoedetail({navigation}) {
       <TouchableOpacity style={styles.imgBackg} >
       <Image source={air} style={styles.imgStyle2}  /> 
       </TouchableOpacity>
-      </View>
+      
       </ScrollView>
       
     <Text style={{ paddingLeft:5, paddingBottom:10, paddingTop:10, color:'grey', fontSize:20, fontWeight:'bold'}}> Quantity </Text>

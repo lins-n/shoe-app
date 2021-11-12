@@ -28,8 +28,8 @@ function Landing({navigation}) {
 
             <Text style={{fontSize:30, fontWeight: 'bold'}}> Discover your</Text>
             <Text style={{fontSize:30, fontWeight:'bold',paddingBottom:30}}> Dream Shoe Here</Text>
-            <Text style={{fontSize:15,color:'#737373' }}>Explore all the most exciting shoes </Text>
-            <Text style={{fontSize:15,paddingBottom:40, color:'#737373' }}>based on your interests and favourite brands </Text>
+            <Text style={{fontSize:15, color:'#737373' }}>Explore all the most exciting shoes </Text>
+            <Text style={{fontSize:15, paddingBottom:40, color:'#737373' }}>based on your interests and favourite brands </Text>
             
           <View style={allStyles.buttonsMain}>
             <TouchableOpacity onPress={() => navigation.push('Login')} style={allStyles.button} >

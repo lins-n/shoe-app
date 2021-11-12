@@ -16,6 +16,7 @@ import Signup from './screens/Signup';
 import Checkout from './screens/Checkout';
 import Thanks from './screens/Thanks';
 import showAlert from './screens/Checkout';
+import showAl from './screens/Drawer';
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,7 @@ export default function App() {
         <Stack.Screen name ="Checkout"  component ={Checkout} options={{headerShown: false}} />
         <Stack.Screen name ="Thanks"  component ={Thanks} options={{headerShown: false}} />
         <Stack.Screen name ="showAlert"  component ={showAlert} options={{headerShown: false}} />
+        <Stack.Screen name ="showAl"  component ={showAl} options={{headerShown: false}} />
       </Stack.Navigator>
 
     </NavigationContainer>

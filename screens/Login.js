@@ -19,10 +19,10 @@ function Login({navigation}) {
   
         <Text style={{color:"#00ace6", marginBottom:50, }}> Welcome back! we missed you </Text>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }} placeholder=' Email'/>
+          <TextInput style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }} placeholder=' Email'/>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput secureTextEntry={true} keyboardType="default" style={{color:"#8c8c8c", fontSize:15,paddingLeft:10, }} placeholder=' Password'/>
+          <TextInput secureTextEntry={true} keyboardType="default" style={{color:"#8c8c8c", fontSize:15, paddingLeft:10, }} placeholder=' Password'/>
           </TouchableOpacity>
 
             <TouchableOpacity style={styles.buttonMain}  onPress={() => navigation.push('Drawer')}  >
