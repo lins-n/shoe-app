@@ -125,8 +125,6 @@ function Categories({navigation}) {
        </TouchableOpacity>
 
       </ScrollView>
-
-   
       
        
           
