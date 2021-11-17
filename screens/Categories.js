@@ -246,11 +246,10 @@ const styles=StyleSheet.create({
     
     },
     imgStylenew:{
-      width: 338, 
+      width: 330, 
       height: 200, 
       borderRadius:25, 
-      
-      marginLeft: 5,
+      marginLeft: 10,
   
     
     },

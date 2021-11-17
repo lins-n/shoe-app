@@ -28,19 +28,20 @@ const showAl = ({navigation}) =>
     }
   );
 
+
 function Drawers() {
   return (
     <Drawer.Navigator >
         <Drawer.Screen name="Categories" component={Tabs}
         options={{
-        title:' ' , 
-        headerStyle:{ backgroundColor:'white'} ,
-        headerTitle: ()=> ( 
-          <TouchableOpacity style={styles.buttonCatnew} >
-          <TextInput style={{color:"#d9d9d9", fontSize:15, paddingLeft:10, }} placeholder='Search' />
-          </TouchableOpacity>
-          ),
+        title:' itFits' ,
+        headerTitleStyle : {
+          fontWeight: 'bold',
+          fontSize: 20,
+          color: '#0095e6',
 
+        } , 
+        headerStyle:{ backgroundColor:'white'} ,
         headerRight: () => (
           <Icon name='bell' type='font-awesome' color='black' size='15'  style={{alignContent:'center',alignItems:'center',paddingTop:1 , paddingRight: 30}}
           onPress={showAl}
