@@ -48,7 +48,7 @@ const  allStyles = {
         width: "80%",
         marginBottom:"10%" , 
         textAlign:"center",
-        fontSize:30, 
+        fontSize:40, 
         fontWeight: 'bold', color:"#262626",
         },
   
@@ -56,7 +56,7 @@ const  allStyles = {
     
           height:60, 
           justifyContent:'center',
-          borderRadius:15, 
+          borderRadius:25, 
           backgroundColor:"#f2f2f2", 
           alignSelf:"center", 
           textAlign: "center" ,
@@ -74,7 +74,7 @@ const  allStyles = {
     
           height:58,
           justifyContent:'center',
-          borderRadius:15, 
+          borderRadius:25, 
           backgroundColor:"#00ace6", 
           alignSelf:"center", 
           textAlign: "center" ,

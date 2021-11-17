@@ -61,7 +61,7 @@ function Signup({navigation}) {
   
         height:60, 
         justifyContent:'center',
-        borderRadius:15, 
+        borderRadius:25, 
         backgroundColor:"#00ace6", 
         alignSelf:"center", 
         textAlign: "center" ,

@@ -1,8 +1,9 @@
-import React from 'react';
-import { Alert, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
-import { Icon } from 'react-native-elements';
+import React , { useState } from 'react';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
+import { Alert, StyleSheet, Text, View , TextInput, TouchableOpacity, Image, ScrollView} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import card3 from '../assets/card3.png';
+import card4 from '../assets/card4.png';
 
 
 
@@ -30,14 +31,34 @@ function Checkout({navigation}) {
 
     const [input,setInput,] = React.useState("");
     
+    
     return (
       <SafeAreaView>
         <View style={styles.Checkout}>
             <ScrollView showsVerticalScrollIndicator={false}>
-            <Text style={{textAlign:'center', paddingBottom:20,}}> Choose a card to complete your purchase </Text>
+            <Text style={{textAlign:'center', paddingBottom:5,}}> Choose a card to complete your purchase </Text>
+            <Text style={{textAlign:'center',}}> Swipe to select a Card</Text>
+
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <View>
             <Image source={card3} style={styles.imgStylenew}  />
+            <View style={{flexDirection:'row', justifyContent:'center',}}>
+            <BouncyCheckbox fillColor="red" checked={false} style={{justifyContent:'center',}}/>
+            <Text style={{paddingTop:3,fontSize:15}}> Select Credit Card</Text>
+            </View>
+            </View>
+
+            <View>
+            <Image source={card4} style={styles.imgStylenew}  />
+            <View style={{flexDirection:'row', justifyContent:'center',}}>
+            <BouncyCheckbox fillColor="blue" checked={false} style={{justifyContent:'center',}}/>
+            <Text style={{paddingTop:3,fontSize:15}}> Select Credit Card</Text>
+            </View>
+            </View>
+            </ScrollView>
             
-            <Text style={{ textAlign:'center', fontSize:20,}}> Enter Card Details </Text>
+            
+            <Text style={{ textAlign:'center', fontSize:20, paddingTop:20,}}> Enter Card Details </Text>
             
             <Text style={styles.cardStyle}> CARD NAME </Text>
             <TouchableOpacity style={styles.buttonCatnew}  >
@@ -46,7 +67,7 @@ function Checkout({navigation}) {
             value={input}
             onChangeText={(text)=> setInput(text)}
             onSubmitEditing={() => {
-                alert("Your Card Name is: + {value} ");
+                
                 setInput('');
             }}
             placeholder=' Enter Card Name '
@@ -105,8 +126,7 @@ const styles= StyleSheet.create({
 
     imgStylenew:{
         borderRadius:25, 
-        marginLeft: 5,
-        alignSelf:'center',
+        width:415,
       },
 
         Checkout:{
@@ -158,7 +178,7 @@ const styles= StyleSheet.create({
   
             height:60,
             justifyContent:'center',
-            borderRadius:15, 
+            borderRadius:25, 
             backgroundColor:"#00ace6", 
             alignSelf:"center", 
             textAlign: "center" ,

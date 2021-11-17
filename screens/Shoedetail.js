@@ -30,7 +30,7 @@ function Shoedetail({navigation}) {
     <Text style={{ paddingLeft:15, paddingBottom:8, color:'grey'}}>Men Running Shoes </Text>
     <Text style={{fontSize:20, marginLeft:6, fontWeight:'bold'}}>  <Icon name='star' type='font-awesome' color='orange' size='20'  />  4.8 </Text>
     </View>
-    <Text style={{fontSize:30, fontWeight:'bold', color:'#00ace6', paddingTop:25, paddingLeft: 70}}> ¢500</Text>
+    <Text style={{fontSize:30, fontWeight:'bold', color:'#00ace6', paddingTop:25, paddingLeft: 70}}> ¢700</Text>
     </View>
     </TouchableOpacity>
 
@@ -87,14 +87,14 @@ function Shoedetail({navigation}) {
           <Text> <Icon name='minus' type='feather' color='black' size='25' style={{paddingLeft:4}} />  </Text> 
       </TouchableOpacity>
 
-      <Text style={{ paddingLeft:15, paddingRight:15, paddingBottom:10, paddingTop:10, color:'#00ace6', fontSize:25, fontWeight:'bold'}}> 5  </Text>
+      <Text style={{ paddingLeft:15, paddingRight:15, paddingBottom:10, paddingTop:10, color:'#00ace6', fontSize:25, fontWeight:'bold'}}> 3  </Text>
 
       <TouchableOpacity style={styles.buttontotal} >
       <Text >  <Icon name='plus' type='feather' color='black' size='25'   />  </Text>
       </TouchableOpacity>
       
             <TouchableOpacity  onPress={() => navigation.push('Cartlist')} style={styles.button1} >
-            <Text style={{color:"white", fontSize:17, fontWeight: 'bold', textAlign:'center'}}>¢2500 Buy Now</Text> 
+            <Text style={{color:"white", fontSize:20, fontWeight: 'bold', textAlign:'center'}}>Buy Now</Text> 
             </TouchableOpacity>
 
       </View>
@@ -126,7 +126,7 @@ const styles= StyleSheet.create({
   
     height:50,
     justifyContent:'center',
-    borderRadius:15, 
+    borderRadius:25, 
     backgroundColor:"#00ace6", 
     alignSelf:"center", 
     textAlign: "center" ,

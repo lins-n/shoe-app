@@ -35,7 +35,7 @@ const Tabs = ({navigation}) => {
         <Tab.Screen name="Main" component={Categories} 
         options={{tabBarLabel:() => {return null}, headerShown: false , tabBarIcon: ({color}) => 
         <View style={styles.iconStyle1} >
-          <Icon reverse name='plus' type='font-awesome' color='#00ace6' size= '27' onPress={toggleModal} />
+          <Icon reverse name='plus' type='font-awesome' color='#00ace6' size= '30' onPress={toggleModal} />
 
               <View style={{ flex: 1 , justifyContent:'center',}}>
           <Button title="Show modal" onPress={toggleModal} />
@@ -96,7 +96,7 @@ const Tabs = ({navigation}) => {
       },
       modalContainer: {
         backgroundColor: "#f2f2f2",
-        borderRadius:15,
+        borderRadius:25,
         padding: 10,
         marginVertical:5,
         width: 200,
@@ -139,7 +139,7 @@ const Tabs = ({navigation}) => {
 
     iconStyle1:{
       paddingBottom:50,
-      paddingLeft:28,
+      marginLeft:23,
       shadowColor: 'black',
       shadowOpacity: 0.5,
       shadowRadius: 5,

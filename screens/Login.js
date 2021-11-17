@@ -47,7 +47,7 @@ function Login({navigation}) {
   
         height:55, 
         justifyContent:'center',
-        borderRadius:15, 
+        borderRadius:25, 
         backgroundColor:"#00ace6",
         alignContent: 'center',
         width:'80%',
