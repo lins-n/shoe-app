@@ -2,18 +2,20 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View , TextInput, TouchableOpacity, Image,ImageBackground, ScrollView} from 'react-native';
 import logo from '../assets/logo.png';
+import img from '../assets/img.jpg';
 import allStyles from '../allStyles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 function Landing({navigation}) {
+  
     return (
       // GOOD
     
       <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' , backgroundColor:'white'}} >
-  
+      
       <View style={{ alignItems: 'center', justifyContent: 'center' ,}}>
         
-        
+      
         
         <Text style={{fontSize:25, color:"#999999", marginTop:30}}> Welcome to </Text>
         
